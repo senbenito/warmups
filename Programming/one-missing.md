@@ -11,3 +11,15 @@ function arrayBuilder(length) {
   return array;
 }
 ```
+
+function findMissing(array){
+  for (let i=0; i<array.length; i++){
+    if (array[i]+1 !== array[i+1]){
+      return array[i]+1;
+    }
+  }
+}
+
+var testArray = arrayBuilder();
+console.log(testArray);
+findMissing(testArray);
