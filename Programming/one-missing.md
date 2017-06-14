@@ -20,6 +20,18 @@ function findMissing(array){
   }
 }
 
+function findMissing(array){
+   var results = array.filter(function(element, index){
+      // console.log(element);
+    if(element-1 !== index){
+      return element;
+    }
+  });
+  return (results.reduce(function(a,v){
+    return a;
+  }))-1;
+}
+
 var testArray = arrayBuilder();
 console.log(testArray);
 findMissing(testArray);
