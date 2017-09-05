@@ -56,6 +56,5 @@ Map (x 2) over all parameters beyond the first two, a and b.
 */
 
 exports.allOthersMapTimesTwo = function(a, b, ...others) {
-  return others.map(e=> {
-    return e*2});
+  return others.map(e=> {return e*2});
 }
