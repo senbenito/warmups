@@ -28,7 +28,7 @@ Rewrite combineArrays to use the spread operator.
 */
 
 exports.combineArrays = function(arr1, arr2) {
-  return arr1 = [...arr1, ...arr2]
+  return [...arr1, ...arr2]
 }
 
 /*
